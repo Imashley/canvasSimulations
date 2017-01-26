@@ -1,0 +1,69 @@
+<!-- three.js Demo - Loading a 3D Model. Collada File Format. -->
+<!-- Additional Notes: Uses separate .js and .xml files. -->
+<!-- Version: 3.0 -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+    	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+		<title>Cashino loader</title>
+	
+
+	
+		<!-- Here we include the three.js JavaScript files. -->
+		<script type="text/javascript" src="three.min.js"></script>
+		<!-- Here we include the three.js stats library. -->
+		<script type="text/javascript" src="stats.min.js"></script>
+		<!-- Here we include the three.js fly controls library. -->
+		<script type="text/javascript" src="FirstPersonControls.js"></script>
+		<!-- Here we include the three.js Collada Model loader. -->
+		<script type="text/javascript" src="ColladaLoader.js"></script>
+		
+		<script type="text/javascript" src="Animation.js"></script>
+		<script type="text/javascript" src="AnimationHandler.js"></script>
+		<script type="text/javascript" src="KeyFrameAnimation.js"></script>
+		<!-- Here we include the our JavaScript files. You can include multiple files. -->
+		<!-- The files can have any name. -->
+		<script type="text/javascript" src="colladafps.js"></script>
+		
+		<script language="JavaScript">
+		function setVisibility(id, visibility) {
+		document.getElementById(id).style.display = visibility;
+		}
+		</script>
+		
+	</head>
+
+	<body bgcolor="White">
+		
+		
+		
+		<div id="myDivContainer" style="position: absolute; top: 0px; left: 0px;">
+
+		</div> 
+		<div id="debugInfo" style="position: relative; top: 4px; 
+														left: 1500px; width: 400px; background: olive;"> 
+				</div> 
+		<div id="debugInfo2" style="position: relative; top: 80px; 
+														left: 820px; width: 400px; background: olive;"> 
+
+		</div>
+		<br>
+		<br>
+		<input type=button name=type value='Show Information' style="float:right;" onclick="setVisibility('sub3', 'inline');";>
+<input type=button name=type value='Hide Information' style="float:right;" onclick="setVisibility('sub3', 'none');";>
+<br> 
+
+<div id="sub3" style="position: absolute;
+	left: 1500px;
+	top: 220px;
+	background-color: #f1f1f1;
+	width: 180px;
+	padding: 10px;
+	color: black;
+	border: #0000cc 2px dashed;
+	display: none;"><p><h3>Cashino LTD are a up and coming Casino company hosting a wide range of gambling such as: <br>Roullete, BlackJack, Poker and many more. <br>Take a look around our simulation using the WASD keys!</h3></p></div>
+	</body>
+</html> 
